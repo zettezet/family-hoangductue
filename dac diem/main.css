@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('GPT.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+  
+  .app {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .app_bgimg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+  }
+  
+  .app_bgimg-image-1 {
+    background-image: url();
+  }
+  
+  .app_bgimg-image-2 {
+    background-image: url();
+  }
+  .app_bgimg-image-3 {
+    background-image: url();
+  }
+  .app_bgimg-image.active {
+    opacity: 1;
+  }
+  
+  .app_text {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+  }
+  
+  .app_text-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    position: absolute;
+  }
+  
+  .app_text-slide.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+  }
+  
+  .pages_list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .pages_item {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .pages_item.active {
+    opacity: 1;
+  }
